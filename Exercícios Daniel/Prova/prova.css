@@ -1,0 +1,57 @@
+#header {
+  height: 70px;
+  background-color: rgb(3, 82, 185);
+  border-radius: 8px;
+}
+
+h1{
+  text-align: center;
+  color:whitesmoke;
+  line-height: 67px;
+
+}
+
+/* Alinha os elementos no centro da página */
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px; /* Adiciona um espaçamento na parte superior */
+}
+
+/* Define o estilo dos elementos de entrada */
+input[type="number"] {
+  width: 110px;
+  padding: 7px;
+  border-radius: 6px;
+  border: 1px solid rgb(80, 80, 80);
+  margin-bottom: 15px;
+}
+
+/* Define o estilo do botão */
+input[type="button"] {
+  padding: 12px 21px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(5, 5, 161);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+
+}
+
+/* Define o estilo do rodapé*/
+footer{
+    padding: 100px;
+    position: bottom;
+   text-align: center;
+}
+
+#op{
+  padding: 12px 21px;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
