@@ -1,0 +1,84 @@
+A função filter é usada para criar um novo array contendo todos os elementos
+de um array original que satisfaçam uma determinada condição. Ela não modifica
+o array original, mas retorna um novo array com os elementos filtrados. 
+A função filter aceita um callback que determina a condição de filtragem. 
+O callback é chamado para cada elemento do array e deve retornar true ou false 
+para indicar se o elemento deve ser incluído no novo array.
+
+  ex: 
+
+const numeros = [1, 2, 3, 4, 5, 6];
+
+const numerosPares = numeros.filter(numero => numero % 2 === 0);
+
+console.log(numerosPares); // Output: [2, 4, 6]
+
+
+
+
+A função find é usada para encontrar o primeiro elemento em um array que satisfaça
+uma determinada condição. Ela retorna o primeiro elemento que faz o callback retornar
+true e pára de percorrer o array assim que encontra esse elemento. Se nenhum elemento
+atender à condição, find retorna undefined.
+
+ex: 
+
+const pessoas = [
+  { nome: 'Alice', idade: 25 },
+  { nome: 'Bob', idade: 30 },
+  { nome: 'Carol', idade: 35 }
+];
+
+const pessoaComNomeBob = pessoas.find(pessoa => pessoa.nome === 'Bob');
+
+console.log(pessoaComNomeBob); // Output: { nome: 'Bob', idade: 30 }
+
+
+
+A função some é usada para verificar se pelo menos um elemento de um array satisfaz 
+uma determinada condição. Ela retorna true se pelo menos um elemento fizer o callback 
+retornar true, caso contrário, retorna false. some pára de percorrer o array assim que
+ encontra o primeiro elemento que satisfaça a condição.
+
+ex: 
+
+const numeros = [1, 2, 3, 4, 5, 6];
+
+const temNumeroMaiorQueQuatro = numeros.some(numero => numero > 4);
+
+console.log(temNumeroMaiorQueQuatro); // Output: true
+
+
+
+O método forEach é usado para iterar sobre os elementos de um array e 
+executar uma função de retorno de chamada (callback) para cada elemento.
+Ele não cria um novo array, apenas itera sobre o array original.
+É geralmente usado quando você deseja executar alguma ação ou operação em cada elemento do array, 
+como imprimir os elementos, atualizar os valores ou realizar alguma outra operação sem criar um novo array.
+
+ex: 
+
+const array = [1, 2, 3, 4, 5];
+
+array.forEach(function(element) {
+  console.log(element);
+});
+
+
+
+
+O método map é usado para criar um novo array com base nos resultados da aplicação de uma função de retorno de 
+chamada a cada elemento do array original.Ele retorna um novo array com o mesmo número de elementos que o array 
+original, onde cada elemento é o resultado da função de retorno de chamada aplicada ao elemento correspondente do array original.
+É frequentemente usado quando você deseja transformar um array em outro, mantendo o mesmo número de elementos.
+
+ex: 
+
+const array = [1, 2, 3, 4, 5];
+
+const newArray = array.map(function(element) {
+  return element * 2;
+});
+
+// O newArray será [2, 4, 6, 8, 10]
+

@@ -134,6 +134,7 @@ pegarFarmacia2 = (farmacia, qtdef) => {
 }
 
 
+
 //cadastra os remédios
 pegarRemedios2 = (remedios, qtder, farmacia) => {
 
